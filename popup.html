@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="header">
+            <span class="app-name">__MSG_appName__</span>
+            <div class="window-controls">
+                <i class="fas fa-cog settings-toggle" id="settings-btn" title="__MSG_settingsTitle__"></i>
+                <span class="dot yellow" id="minimize-btn" title="__MSG_openInWindow__"></span>
+                <span class="dot red" id="close-btn" title="__MSG_close__"></span>
+            </div>
+        </div>
+
+        <!-- Settings Panel (Overlay) -->
+        <div id="settings-panel" class="settings-panel hidden">
+            <!-- Settings Header (Matching Main Header) -->
+            <div class="header">
+                <span class="app-name">__MSG_settingsTitle__</span>
+                <div class="window-controls">
+                    <i class="fas fa-arrow-left settings-toggle" id="back-settings-btn" title="__MSG_back__"></i>
+                    <span class="dot yellow" title="__MSG_openInWindow__"
+                        onclick="document.getElementById('minimize-btn').click()"></span>
+                    <span class="dot red" id="close-settings-btn" title="__MSG_close__"></span>
+                </div>
+            </div>
+
+            <div class="settings-content">
+                <div class="auth-section">
+                    <p id="auth-status-text">__MSG_statusDisconnected__</p>
+                    <button id="auth-btn" class="auth-btn">
+                        <i class="fab fa-google"></i> <span id="auth-btn-text">__MSG_connectGoogle__</span>
+                    </button>
+                    <button id="logout-btn" class="auth-btn logout hidden">
+                        <i class="fas fa-sign-out-alt"></i> __MSG_disconnect__
+                    </button>
+
+                    <div class="uri-container" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px;">
+                        <small>__MSG_clientIdLabel__:</small>
+                        <div class="input-group">
+                            <input type="text" id="client-id-input" placeholder="Client ID...">
+                            <button id="save-client-id-btn" class="copy-btn" title="__MSG_save__">
+                                <i class="fas fa-save"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div>Version: 1.2.7</div>
+                <div>Dev: Aras</div>
+            </div>
+        </div>
+
+        <div id="main-view">
+            <div id="drop-zone" class="upload-area disabled">
+                <div class="upload-content">
+                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                    <p id="upload-text">__MSG_loginToUpload__</p>
+                    <input type="file" id="fileInput" hidden disabled>
+                </div>
+                <div id="loader" class="loader hidden"></div>
+            </div>
+
+            <div class="list-title">__MSG_sentRecently__</div>
+
+            <div id="file-list" class="file-list">
+                <div class="empty-state">__MSG_emptyStateLogin__</div>
+            </div>
+
+            <div class="footer">
+                <div>Version: 1.2.7</div>
+                <div>Dev: Aras</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Confirmation Modal -->
+    <div id="confirm-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h3 class="modal-title">__MSG_appName__</h3>
+            <p id="modal-message" class="modal-message"></p>
+            <div class="modal-actions">
+                <button id="modal-cancel-btn" class="modal-btn secondary">__MSG_btnCancel__</button>
+                <button id="modal-confirm-btn" class="modal-btn danger">__MSG_btnYes__</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-container"></div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

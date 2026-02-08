@@ -1,0 +1,24 @@
+
+# System
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Keys & Secrets (Important!)
+*.pem
+*.key
+.env
+
+# Editor
+.vscode
+.idea
+*.swp
+
+# Build (if you use webpack etc later)
+dist/
+node_modules/

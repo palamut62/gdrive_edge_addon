@@ -1,0 +1,95 @@
+{
+    "appName": {
+        "message": "File Hub"
+    },
+    "appDescription": {
+        "message": "Google Drive Eşitleme Eklentisi"
+    },
+    "settingsTitle": {
+        "message": "Ayarlar"
+    },
+    "close": {
+        "message": "Kapat"
+    },
+    "back": {
+        "message": "Geri"
+    },
+    "refresh": {
+        "message": "Yenile"
+    },
+    "statusDisconnected": {
+        "message": "Bağlantı Durumu: Kesik"
+    },
+    "statusConnected": {
+        "message": "Bağlantı Durumu: Aktif"
+    },
+    "connectGoogle": {
+        "message": "Google ile Bağlan"
+    },
+    "disconnect": {
+        "message": "Bağlantıyı Kes"
+    },
+    "loginToUpload": {
+        "message": "Yükleme yapmak için giriş yapın"
+    },
+    "dragDropText": {
+        "message": "Dosyaları Buraya Sürükleyin"
+    },
+    "sentRecently": {
+        "message": "SON GÖNDERİLENLER"
+    },
+    "emptyStateLogin": {
+        "message": "Lütfen ayarlardan giriş yapın."
+    },
+    "emptyStateNoFiles": {
+        "message": "Henüz dosya yok."
+    },
+    "toastUploading": {
+        "message": "Dosya yükleniyor..."
+    },
+    "toastUploaded": {
+        "message": "Dosya başarıyla yüklendi!"
+    },
+    "toastUploadError": {
+        "message": "Yükleme Hatası: "
+    },
+    "toastConnectionError": {
+        "message": "Bağlantı Hatası: "
+    },
+    "toastAuthStarted": {
+        "message": "Giriş yapılıyor..."
+    },
+    "toastAuthSuccess": {
+        "message": "Başarıyla bağlanıldı!"
+    },
+    "toastAuthFailed": {
+        "message": "Giriş başarısız oldu."
+    },
+    "toastTokenMissing": {
+        "message": "Token alınamadı."
+    },
+    "toastManifestMissing": {
+        "message": "Hata: Geliştirici (manifest.json) yapılandırması eksik. Lütfen Client ID ekleyin."
+    },
+    "confirmDelete": {
+        "message": "Dosya Drive'dan silinsin mi?"
+    },
+    "clientIdLabel": {
+        "message": "Client ID (Geliştirici)"
+    },
+    "save": {
+        "message": "Kaydet"
+    },
+    "clientIdSaved": {
+        "message": "Client ID kaydedildi!"
+    },
+    "btnYes": {
+        "message": "Evet, Sil"
+    },
+    "btnCancel": {
+        "message": "İptal"
+    },
+    "openInWindow": {
+        "message": "Pencerede Aç"
+    }
+}

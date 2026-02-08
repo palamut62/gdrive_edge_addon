@@ -1,0 +1,95 @@
+{
+    "appName": {
+        "message": "File Hub"
+    },
+    "appDescription": {
+        "message": "Google Drive Sync Extension"
+    },
+    "settingsTitle": {
+        "message": "Settings"
+    },
+    "close": {
+        "message": "Close"
+    },
+    "back": {
+        "message": "Back"
+    },
+    "refresh": {
+        "message": "Refresh"
+    },
+    "statusDisconnected": {
+        "message": "Status: Disconnected"
+    },
+    "statusConnected": {
+        "message": "Status: Active"
+    },
+    "connectGoogle": {
+        "message": "Connect with Google"
+    },
+    "disconnect": {
+        "message": "Disconnect"
+    },
+    "loginToUpload": {
+        "message": "Login to Upload"
+    },
+    "dragDropText": {
+        "message": "Drag & Drop Files Here"
+    },
+    "sentRecently": {
+        "message": "SENT RECENTLY"
+    },
+    "emptyStateLogin": {
+        "message": "Please login from settings."
+    },
+    "emptyStateNoFiles": {
+        "message": "No files yet."
+    },
+    "toastUploading": {
+        "message": "Uploading file..."
+    },
+    "toastUploaded": {
+        "message": "File uploaded successfully!"
+    },
+    "toastUploadError": {
+        "message": "Upload Error: "
+    },
+    "toastConnectionError": {
+        "message": "Connection Error: "
+    },
+    "toastAuthStarted": {
+        "message": "Logging in..."
+    },
+    "toastAuthSuccess": {
+        "message": "Connected successfully!"
+    },
+    "toastAuthFailed": {
+        "message": "Login failed."
+    },
+    "toastTokenMissing": {
+        "message": "Could not retrieve token."
+    },
+    "toastManifestMissing": {
+        "message": "Error: Developer (manifest.json) config missing. Please add Client ID."
+    },
+    "confirmDelete": {
+        "message": "Delete file from Drive?"
+    },
+    "clientIdLabel": {
+        "message": "Client ID (Developer)"
+    },
+    "save": {
+        "message": "Save"
+    },
+    "clientIdSaved": {
+        "message": "Client ID saved!"
+    },
+    "btnYes": {
+        "message": "Yes, Delete"
+    },
+    "btnCancel": {
+        "message": "Cancel"
+    },
+    "openInWindow": {
+        "message": "Open in Window"
+    }
+}
