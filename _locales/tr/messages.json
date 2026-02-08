@@ -91,5 +91,35 @@
     },
     "openInWindow": {
         "message": "Pencerede Aç"
+    },
+    "redirectUriLabel": {
+        "message": "Yönlendirme URI"
+    },
+    "copiedToClipboard": {
+        "message": "Panoya kopyalandı!"
+    },
+    "setupNoteTitle": {
+        "message": "Nasıl Kurulur?"
+    },
+    "setupNoteBody": {
+        "message": "Google Cloud Console'da bir OAuth 2.0 İstemci Kimliği oluşturun. 'Yönlendirme URI'sini 'Yetkili yönlendirme URI'leri' alanına ekleyin ve aldığınız İstemci Kimliği'ni yukarıya yapıştırın."
+    },
+    "helpTitle": {
+        "message": "Yardım"
+    },
+    "helpIntro": {
+        "message": "File Hub, Google Drive'a hızlı dosya yüklemenizi sağlar."
+    },
+    "helpStep1": {
+        "message": "1. Ayarlar'dan Client ID'nizi girin."
+    },
+    "helpStep2": {
+        "message": "2. Google hesabınızla giriş yapın."
+    },
+    "helpStep3": {
+        "message": "3. Dosyaları sürükleyip bırakın!"
+    },
+    "versionLabel": {
+        "message": "Sürüm"
     }
 }

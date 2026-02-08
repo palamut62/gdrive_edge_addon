@@ -91,5 +91,35 @@
     },
     "openInWindow": {
         "message": "Open in Window"
+    },
+    "redirectUriLabel": {
+        "message": "Redirect URI"
+    },
+    "copiedToClipboard": {
+        "message": "Copied to clipboard!"
+    },
+    "setupNoteTitle": {
+        "message": "How to Setup?"
+    },
+    "setupNoteBody": {
+        "message": "Create an OAuth 2.0 Client ID in Google Cloud Console. Add this 'Redirect URI' to 'Authorized redirect URIs', and paste your Client ID above."
+    },
+    "helpTitle": {
+        "message": "Help"
+    },
+    "helpIntro": {
+        "message": "File Hub allows quick file uploads to Google Drive."
+    },
+    "helpStep1": {
+        "message": "1. Enter your Client ID in Settings."
+    },
+    "helpStep2": {
+        "message": "2. Connect with your Google account."
+    },
+    "helpStep3": {
+        "message": "3. Drag and drop files to upload!"
+    },
+    "versionLabel": {
+        "message": "Version"
     }
 }

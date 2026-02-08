@@ -12,15 +12,16 @@
         <div class="header">
             <span class="app-name">__MSG_appName__</span>
             <div class="window-controls">
+                <i class="fas fa-question-circle help-toggle" id="help-btn" title="__MSG_helpTitle__"
+                    style="margin-right: 10px; cursor: pointer; color: #FFF;"></i>
                 <i class="fas fa-cog settings-toggle" id="settings-btn" title="__MSG_settingsTitle__"></i>
                 <span class="dot yellow" id="minimize-btn" title="__MSG_openInWindow__"></span>
                 <span class="dot red" id="close-btn" title="__MSG_close__"></span>
             </div>
         </div>
 
-        <!-- Settings Panel (Overlay) -->
+        <!-- Settings Panel -->
         <div id="settings-panel" class="settings-panel hidden">
-            <!-- Settings Header (Matching Main Header) -->
             <div class="header">
                 <span class="app-name">__MSG_settingsTitle__</span>
                 <div class="window-controls">
@@ -30,7 +31,6 @@
                     <span class="dot red" id="close-settings-btn" title="__MSG_close__"></span>
                 </div>
             </div>
-
             <div class="settings-content">
                 <div class="auth-section">
                     <p id="auth-status-text">__MSG_statusDisconnected__</p>
@@ -49,37 +49,91 @@
                                 <i class="fas fa-save"></i>
                             </button>
                         </div>
+
+                        <small style="display:block; margin-top:10px;">__MSG_redirectUriLabel__:</small>
+                        <div class="input-group">
+                            <input type="text" id="redirect-uri-input" readonly
+                                style="background-color: #f9fafb; cursor: text;">
+                            <button id="copy-uri-btn" class="copy-btn" title="__MSG_copy__">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-
             <div class="footer">
                 <div>Version: 1.2.7</div>
                 <div>Dev: Aras</div>
             </div>
         </div>
 
-        <div id="main-view">
-            <div id="drop-zone" class="upload-area disabled">
-                <div class="upload-content">
-                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
-                    <p id="upload-text">__MSG_loginToUpload__</p>
-                    <input type="file" id="fileInput" hidden disabled>
+        <!-- Help Panel -->
+        <div id="help-panel" class="settings-panel hidden" style="z-index: 101;">
+            <div class="header">
+                <span class="app-name">__MSG_helpTitle__</span>
+                <div class="window-controls">
+                    <i class="fas fa-arrow-left help-toggle" id="back-help-btn" title="__MSG_back__"></i>
+                    <span class="dot yellow" title="__MSG_openInWindow__"
+                        onclick="document.getElementById('minimize-btn').click()"></span>
+                    <span class="dot red" id="close-help-btn" title="__MSG_close__"></span>
                 </div>
-                <div id="loader" class="loader hidden"></div>
             </div>
+            <div class="settings-content">
+                <div style="margin-bottom: 20px; padding: 0 10px;">
+                    <p style="font-size: 14px; margin-bottom: 15px; font-weight: 500; color: #1E3A8A;">__MSG_helpIntro__
+                    </p>
+                    <ul style="padding-left: 20px; color: #4B5563; font-size: 13px; line-height: 1.6;">
+                        <li>__MSG_helpStep1__</li>
+                        <li>__MSG_helpStep2__</li>
+                        <li>__MSG_helpStep3__</li>
+                    </ul>
+                </div>
 
-            <div class="list-title">__MSG_sentRecently__</div>
+                <!-- Setup Instructions (Moved from Settings) -->
+                <div style="padding: 0 10px;">
+                    <strong style="display: block; color: #1E3A8A; margin-bottom: 8px; font-size: 13px;"><i
+                            class="fas fa-info-circle"></i> __MSG_setupNoteTitle__</strong>
+                    <p style="color: #4B5563; font-size: 13px; line-height: 1.5;">__MSG_setupNoteBody__</p>
+                </div>
 
-            <div id="file-list" class="file-list">
-                <div class="empty-state">__MSG_emptyStateLogin__</div>
-            </div>
+                <div style="margin-top: 30px; text-align: center; color: #9CA3AF; font-size: 12px;">
+                    <p>File Hub Extension</p>
+                    <p>__MSG_versionLabel__: 1.0.0</p>
 
-            <div class="footer">
-                <div>Version: 1.2.7</div>
-                <div>Dev: Aras</div>
+                    <div class="social-links"
+                        style="margin-top: 15px; display: flex; justify-content: center; gap: 15px;">
+                        <a href="https://github.com/palamut62" target="_blank" title="GitHub"
+                            style="color: #374151; font-size: 18px; text-decoration: none; transition: color 0.2s;">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/palamut62" target="_blank" title="X (Twitter)"
+                            style="color: #374151; font-size: 18px; text-decoration: none; transition: color 0.2s;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
+        <div id="drop-zone" class="upload-area disabled">
+            <div class="upload-content">
+                <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                <p id="upload-text">__MSG_loginToUpload__</p>
+                <input type="file" id="fileInput" hidden disabled>
+            </div>
+            <div id="loader" class="loader hidden"></div>
+        </div>
+
+        <div class="list-title">__MSG_sentRecently__</div>
+
+        <div id="file-list" class="file-list">
+            <div class="empty-state">__MSG_emptyStateLogin__</div>
+        </div>
+
+        <div class="footer">
+            <div>Version: 1.2.7</div>
+            <div>Dev: Aras</div>
+        </div>
+    </div>
     </div>
 
     <!-- Custom Confirmation Modal -->

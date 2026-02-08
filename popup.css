@@ -93,6 +93,19 @@ body {
     color: #666;
 }
 
+.sett.info-card p {
+    margin: 0;
+    line-height: 1.4;
+    color: #4B5563;
+}
+
+/* Social Links Hover */
+.social-links a:hover {
+    color: #10B981 !important;
+    /* Green hover matching theme */
+    transform: scale(1.1);
+}
+
 .settings-header h3 {
     margin: 0;
     font-size: 20px;
@@ -123,11 +136,7 @@ body {
 
 .auth-section {
     text-align: center;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    border: 1px solid #E5E7EB;
+    padding: 10px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -181,9 +190,12 @@ body {
 
 .uri-container small {
     display: block;
-    color: #6B7280;
-    font-size: 10px;
-    margin-bottom: 3px;
+    color: #1E3A8A;
+    /* Dark Blue */
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    margin-left: 2px;
 }
 
 .input-group {
@@ -194,14 +206,22 @@ body {
 
 .uri-container input {
     flex-grow: 1;
-    border: 1px solid #E5E7EB;
-    background: #F9FAFB;
-    padding: 5px;
-    border-radius: 4px;
-    font-size: 10px;
-    color: #374151;
+    border: 1px solid #C7D2FE;
+    /* Indigo-200 */
+    background: #FFFFFF;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    color: #1F2937;
     box-sizing: border-box;
     outline: none;
+    transition: all 0.2s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.uri-container input:focus {
+    border-color: #4F46E5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
 }
 
 .copy-btn {

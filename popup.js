@@ -23,18 +23,47 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Populate Redirect URI
+    const redirectUri = chrome.identity.getRedirectURL();
+    const redirectInput = document.getElementById('redirect-uri-input');
+    if (redirectInput) {
+        redirectInput.value = redirectUri;
+        // Copy functionality
+        document.getElementById('copy-uri-btn').addEventListener('click', () => {
+            navigator.clipboard.writeText(redirectUri).then(() => {
+                showToast(chrome.i18n.getMessage("copiedToClipboard"), "success");
+            });
+        });
+    }
+
     checkAuth();
 
     // Settings Panel Controls
     const settingsPanel = document.getElementById('settings-panel');
+    const helpPanel = document.getElementById('help-panel');
+
+    // Settings Toggle
     document.getElementById('settings-btn').addEventListener('click', () => {
         settingsPanel.classList.toggle('hidden');
+        helpPanel.classList.add('hidden'); // Close help if open
     });
     document.getElementById('close-settings-btn').addEventListener('click', () => {
         settingsPanel.classList.add('hidden');
     });
     document.getElementById('back-settings-btn').addEventListener('click', () => {
         settingsPanel.classList.add('hidden');
+    });
+
+    // Help Toggle
+    document.getElementById('help-btn').addEventListener('click', () => {
+        helpPanel.classList.toggle('hidden');
+        settingsPanel.classList.add('hidden'); // Close settings if open
+    });
+    document.getElementById('close-help-btn').addEventListener('click', () => {
+        helpPanel.classList.add('hidden');
+    });
+    document.getElementById('back-help-btn').addEventListener('click', () => {
+        helpPanel.classList.add('hidden');
     });
     const dropZone = document.getElementById('drop-zone');
     const fileInput = document.getElementById('fileInput');
