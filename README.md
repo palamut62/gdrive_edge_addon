@@ -11,6 +11,13 @@
 - 🗑️ **Management**: View your recent uploads and delete files directly from the extension.
 - 🎨 **Modern UI**: Clean, responsive design with dark/light mode compatibility.
 
+## Screenshots
+
+<div align="center">
+  <img src="screenshoot1.png" alt="File Hub Main View" width="45%" style="margin-right: 10px;" />
+  <img src="screenshoot2.png" alt="File Hub Settings" width="45%" />
+</div>
+
 ## Installation
 
 1.  Clone this repository:
